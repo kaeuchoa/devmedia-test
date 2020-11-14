@@ -16,7 +16,18 @@
     .nav__search {
         max-width: 30%;
     }
-    .container {
-        margin: 0 var(--container-margin);
+    
+    .card:not(:first-child) {
+        margin: 10px;
     }
+    
+    .card-list {
+        justify-content: start;
+    }
+    
+    .card {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
 }
