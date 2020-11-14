@@ -1,0 +1,17 @@
+@media screen and (min-width: 767px) {
+    .nav {
+        flex-direction: row;
+    }
+    .nav__logo {
+        max-width: 10%;
+    }
+    
+    .nav__items {
+        max-width: 40%;
+    }
+    
+    .nav__search {
+        max-width: 30%;
+    }
+    
+}
