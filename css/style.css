@@ -45,7 +45,6 @@ body {
 
 
 .nav__hamburguer {
-    background-color: aqua;
     padding: 5px;
     margin: 0;
     width: 100%;
@@ -82,7 +81,7 @@ body {
 
 
 .nav__logo {
-    background-color: blue;
+    
 }
 
 .nav__items {
@@ -118,8 +117,16 @@ body {
     margin: 15px 10px;
 }
 
-.nav__search {
-    background-color: chocolate;
+.nav__search input{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    padding: 8px;
+    padding-left: 35px;
+    background-image: url(https://api.iconify.design/et-magnifying-glass.svg?height=32);
+    background-repeat: no-repeat;
+    background-position: 8px;
+    background-size: 20px;
 }
 
 .container {
