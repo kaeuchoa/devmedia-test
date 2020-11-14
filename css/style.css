@@ -1,12 +1,21 @@
 :root {
     --primary-color: #ccc;
     --nav-height: 75px;
+    --footer-height: calc(var(--nav-height) - 25px);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.nav, 
+.footer {
+    width: 100%;
+    background-color: var(--primary-color);
 }
 
 .nav {
     height: var(--nav-height);
-    background-color: var(--primary-color);
-    width: 100%;
     position: fixed;
     top: 0;
     display: flex;
@@ -32,4 +41,23 @@
 
 .nav__search {
     background-color: chocolate;
+}
+
+.container {
+    margin-top: var(--nav-height);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    font-weight: bold;
+    font-size: .7rem;
+    color: #fff;
 }
