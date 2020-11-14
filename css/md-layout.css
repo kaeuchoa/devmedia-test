@@ -16,4 +16,7 @@
     .nav__search {
         max-width: 30%;
     }
+    .container {
+        margin: 0 var(--container-margin);
+    }
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/md-layout.css">
+    <link rel="stylesheet" href="css/lg-layout.css">
     <script defer src="js/index.js"></script>
 </head>
 <body>
@@ -24,7 +25,25 @@
             <input type="text">
         </div>
     </header>
-    <div class="container"></div>
+    <main class="container">
+        <ul class="card-list">
+            <li class="card card--loading">
+                <div class="card__header">
+                    <span class="card__header__holder"></span>
+                    <span class="card__header__text"></span>
+                </div>
+                
+                <div class="card__body">
+                    <span class="card__body__holder"></span>
+                    <p class="card__body__text"></p>
+                </div>
+                
+                <div class="card__footer">
+                    <button type="button">Acessar</button>
+                </div>
+            </li>
+        </ul>
+    </main>
     
     <footer class="footer">
         <div class="footer__text">
