@@ -7,16 +7,36 @@
     .nav__search {
         width: 100%;
     }
+    .nav__hamburguer {
+        display: none;
+    }
+    
     .nav__logo {
         max-width: 10%;
     }
     .nav__items {
-        max-width: 40%;
+        display: block;
+        position: relative;
+        box-shadow: none;
     }
+    
+    .nav__items ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .nav__item {
+        text-transform: uppercase;
+        font-size: .7rem;
+    }
+
     .nav__search {
         max-width: 30%;
     }
-    
+
     .card:not(:first-child) {
         margin: 10px;
     }
