@@ -11,9 +11,9 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <header class="nav">
+    <nav class="nav">
         <div class="nav__hamburguer">
-            <button type="button" class="nav__toggle-btn"></button>
+            <button type="button" class="nav__toggle-btn js-toggle-btn"></button>
         </div>
         <div class="nav__logo">
             <img src="" alt="">
@@ -21,14 +21,15 @@
         </div>
         <div class="nav__items">
             <ul>
-                <li class="nav__item_">Cadastrar Notícias</li>
-                <li class="nav__item_">Exibir Notícias</li>
+                <li class="nav__item">Cadastrar Notícias</li>
+                <li class="nav__item">Exibir Notícias</li>
             </ul>
         </div>
+        <div class="nav__items__mask js-nav-mask"></div>
         <div class="nav__search">
             <input type="text">
         </div>
-    </header>
+    </nav>
     <main class="container">
         <ul class="card-list">
             <li class="card card--loading">

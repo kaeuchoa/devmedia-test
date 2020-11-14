@@ -35,7 +35,6 @@ body {
 }
 
 .nav__logo, 
-.nav__items, 
 .nav__search,
 .nav__hamburguer {
     flex-grow: 1;
@@ -55,7 +54,7 @@ body {
 .nav__toggle-btn,
 .nav__toggle-btn::before,
 .nav__toggle-btn::after {
-    background-color: #272727;
+    background-color: #4d4d4d;
     height: 5px;
     width: 20px;
     border-radius: 2px;
@@ -87,8 +86,36 @@ body {
 }
 
 .nav__items {
-    background-color: brown;
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    margin: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 3px 0px 7px 2px rgba(0, 0, 0, .3);
     display: none;
+}
+
+.nav__items__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 99;
+    display: none;
+}
+
+.nav__items.active,
+.nav__items.active + .nav__items__mask {
+    display: block;
+}
+
+.nav__item {
+    margin: 15px 10px;
 }
 
 .nav__search {
