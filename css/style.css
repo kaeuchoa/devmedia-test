@@ -31,17 +31,56 @@ body {
     position: fixed;
     top: 0;
     display: flex;
-    flex-direction: column;
     z-index: 99999;
 }
 
 .nav__logo, 
 .nav__items, 
-.nav__search {
+.nav__search,
+.nav__hamburguer {
     flex-grow: 1;
-    height: 100%;
     margin: 0 var(--container-margin);
+    align-items: center;
+    display: flex;
 }
+
+
+.nav__hamburguer {
+    background-color: aqua;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+}
+
+.nav__toggle-btn,
+.nav__toggle-btn::before,
+.nav__toggle-btn::after {
+    background-color: #272727;
+    height: 5px;
+    width: 20px;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.nav__toggle-btn {
+    border: none;
+    position: relative;
+}
+
+.nav__toggle-btn::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+.nav__toggle-btn::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+
 
 .nav__logo {
     background-color: blue;
@@ -49,6 +88,7 @@ body {
 
 .nav__items {
     background-color: brown;
+    display: none;
 }
 
 .nav__search {
@@ -60,7 +100,6 @@ body {
     margin-top: calc(var(--nav-height) + var(--container-margin));
     margin-bottom: var(--container-margin);
     height: 100%;
-    background-color: lightblue;
 }
 
 .card:not(:first-child) {
